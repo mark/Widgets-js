@@ -1,0 +1,9 @@
+<div id="widget_<%= widget.id %>"
+     class="widget_frame"
+     style="<%= widget_style_string widget %>"
+     data-widget-id="<%= widget.id %>"
+     data-renderer="<%= widget.renderer %>">
+  <script>
+    register_widget_data(<%= widget.id %>, <%= widget.data_string %>);
+  </script>
+</div>

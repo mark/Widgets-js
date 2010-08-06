@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Foo Bar Baz Quux</title>
+    
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" %>
+    <%= javascript_include_tag 'application' %>
+
+    <%= javascript_include_tag %w(widget sample_renderers) %>
+
+    <%= javascript_include_tag %w( raphael-min g.raphael-min g.bar-min g.dot-min g.line-min g.pie-min ) %>
+    
+  </head>
+  
+  <body>
+    <%= yield %>
+  </body>
+</html>
